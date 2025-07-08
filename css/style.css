@@ -54,7 +54,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 50px 200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 nav ul {
   display: flex;
@@ -69,21 +72,58 @@ nav ul li a {
   font-size: 20px;
 }
 
-.banner-greetings {
-  font-size: 45px;
-  font-weight: 600;
-}
-.banner-title {
-  font-weight: bold;
-  font-size: 85px;
-}
 .banner {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  margin: 0 40px 0 230px;
+  padding: 60px 40px;
+  gap: 40px;
 }
+
 .banner-content {
   max-width: 500px;
+  padding: 0 200px;
+}
+.banner-greetings {
+  font-size: 32px;
+  font-weight: 600;
+  color: #474747;
+  margin-bottom: 10px;
+}
+
+.banner-title {
+  font-weight: bold;
+  font-size: 60px;
+  margin: 0;
+  color: #222;
+}
+
+.banner-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.btn-primary {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
 }
 
 /* main section */
@@ -116,11 +156,14 @@ nav ul li a {
 }
 
 .skill {
+  height: 377px;
   background-color: #ffffff;
   border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
   padding: 20px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -151,7 +194,7 @@ nav ul li a {
 /* resume section style start */
 .resume {
   padding: 60px 40px;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
@@ -181,7 +224,7 @@ nav ul li a {
 .educations .section-title,
 .experiances .section-title {
   font-size: 22px;
-  color: #0d6efd;
+  color: #474747;
   margin-bottom: 20px;
 }
 
@@ -221,7 +264,7 @@ hr {
   padding: 12px 30px;
   font-size: 16px;
   font-weight: 600;
-  background-color: #0d6efd;
+  background-color: #fd6e0a;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -230,12 +273,12 @@ hr {
 }
 
 .resume button:hover {
-  background-color: #084fc7;
+  background-color: #fd6e0a;
   transform: scale(1.05);
 }
 /* footer section code start */
 footer {
-  background-color: #0f172a;
+  background-color: #fff8f3;
   color: #ffffff;
   padding: 60px 30px;
   display: flex;
@@ -251,21 +294,29 @@ footer {
 }
 
 .footer-container {
-  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .title {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: #181818;
 }
 
 .futtor-collum p {
   font-size: 14px;
   line-height: 1.8;
   margin-bottom: 20px;
-  color: #cbd5e1;
+  color: #474747;
 }
 
 .icon img {
@@ -293,8 +344,8 @@ footer {
   font-size: 15px;
   border: none;
   border-radius: 8px;
-  background-color: #1e293b;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #1b1a1a;
   resize: none;
   outline: none;
 }
@@ -305,8 +356,10 @@ footer {
 }
 
 .futtor-collum button {
+  width: 150px;
+  height: 64px;
   padding: 14px;
-  background-color: #0d6efd;
+  background-color: #fd6e0a;
   color: white;
   font-size: 16px;
   font-weight: 600;
@@ -317,6 +370,6 @@ footer {
 }
 
 .futtor-collum button:hover {
-  background-color: #084fc7;
+  background-color: #ec721a;
   transform: scale(1.05);
 }
