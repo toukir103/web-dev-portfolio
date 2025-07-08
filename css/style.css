@@ -233,3 +233,90 @@ hr {
   background-color: #084fc7;
   transform: scale(1.05);
 }
+/* footer section code start */
+footer {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 60px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+.futtor-collum {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.footer-container {
+  flex-basis: 100%;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.futtor-collum p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #cbd5e1;
+}
+
+.icon img {
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icon img:hover {
+  transform: scale(1.1);
+}
+
+/* Form Styling */
+.futtor-collum form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.futtor-collum input,
+.futtor-collum textarea {
+  padding: 14px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1e293b;
+  color: #ffffff;
+  resize: none;
+  outline: none;
+}
+
+.futtor-collum input::placeholder,
+.futtor-collum textarea::placeholder {
+  color: #94a3b8;
+}
+
+.futtor-collum button {
+  padding: 14px;
+  background-color: #0d6efd;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.futtor-collum button:hover {
+  background-color: #084fc7;
+  transform: scale(1.05);
+}
