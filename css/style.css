@@ -12,7 +12,16 @@
 .secondary-bg {
   background-color: #fff8f3;
 }
-
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+  background-color: transparent;
+}
 .nav-title {
   font-weight: 800;
   font-size: 45px;
@@ -93,7 +102,7 @@ nav ul li a {
 
 .banner-title {
   font-weight: bold;
-  font-size: 60px;
+  font-size: 50px;
   margin: 0;
   color: #222;
 }
@@ -104,7 +113,19 @@ nav ul li a {
   line-height: 1.6;
   margin-top: 20px;
 }
+.banner img,
+.banner-image {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
 
+.banner img:hover {
+  transform: scale(1.03);
+}
 .btn-container {
   display: flex;
   gap: 20px;
