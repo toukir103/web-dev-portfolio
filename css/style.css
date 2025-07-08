@@ -107,7 +107,7 @@ nav ul li a {
 .item-description {
   font-weight: 600;
 }
-/* skills card style */
+/* skills card style start */
 .skills-card {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -146,4 +146,90 @@ nav ul li a {
   font-size: 14px;
   color: #555;
   line-height: 1.6;
+}
+/* skills card style end */
+/* resume section style start */
+.resume {
+  padding: 60px 40px;
+  background-color: #f4f4f4;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.resume .section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.education-expriance-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  text-align: left;
+}
+
+.educations,
+.experiances {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.educations .section-title,
+.experiances .section-title {
+  font-size: 22px;
+  color: #0d6efd;
+  margin-bottom: 20px;
+}
+
+.education,
+.experiance {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.university {
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+/* Download Button Styling */
+.resume button {
+  margin-top: 40px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.resume button:hover {
+  background-color: #084fc7;
+  transform: scale(1.05);
 }
